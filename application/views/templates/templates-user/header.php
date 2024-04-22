@@ -25,8 +25,7 @@
                     <?php
                     if (!empty($this->session->userdata('email'))) { ?>
                         <a class="nav-item nav-link" href="<?= base_url('booking'); ?>">Booking <b>
-                                <?php
-                                // $this->ModelBooking->getDataWhere('temp', ['email_user' => $this->session->userdata('email')])->num_rows(); 
+                                <?= $this->ModelBooking->getDataWhere('temp', ['email_user' => $this->session->userdata('email')])->num_rows();
                                 ?>
                             </b> Buku</a>
                         <a class="nav-item nav-link" href="<?= base_url('member/myprofil'); ?>">Profil Saya</a>

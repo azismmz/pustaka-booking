@@ -4,8 +4,6 @@ class Member extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model(['ModelBuku', 'ModelUser']);
-        // $this->load->model(['ModelBuku', 'ModelUser', 'ModelBooking']);
     }
     public function index()
     {
